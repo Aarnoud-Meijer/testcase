@@ -25,6 +25,9 @@ class childmodel implements basemodel{
     }
 }
 
+class testmodel extends childmodel{
+    // <- look ma, no methods, no error
+}
 
 
 echo "done ";

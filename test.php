@@ -14,14 +14,19 @@ class originalClass{
 
 
 class extendedClass extends originalClass{
+	private $instance;
 
 	private function __construct(){
 		parent::init();
 	}
 
 	public static function init(){
-		// 
-		self::__construct(); // <- will fail
+		// PHP Fatal error:  Uncaught Error: Non-static method extendedClass::__construct() cannot be called statically
+		// self::__construct(); // <- will fail
+
+		// PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string
+		// PHP Fatal error:  Uncaught Error: Non-static method originalClass::__construct() cannot be called statically 
+		self::$instance = new extendedClass();
 	}
 }
 

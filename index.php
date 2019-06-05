@@ -13,8 +13,9 @@ interface basemodel{
 //    public function notexict(); // <- nope
 }
 
+interface secondbase extends basemodel { }
 
-class childmodel implements basemodel{
+class childmodel implements secondbase{
     public function test(){
 
     }

@@ -1,0 +1,8 @@
+[Wed Jun 05 11:05:40.483790 2019] [php7:error] [pid 6146] [client 127.0.0.1:60324] PHP Fatal error:  childmodel cannot implement basemodel - it is not an interface in /var/www/sites/codegorilla/avoid/testcase/index.php on line 9
+[Wed Jun 05 11:25:58.221264 2019] [php7:error] [pid 6183] [client 127.0.0.1:60484] PHP Fatal error:  Interfaces may not include member variables in /var/www/sites/codegorilla/avoid/testcase/index.php on line 6
+[Wed Jun 05 11:26:26.854801 2019] [php7:error] [pid 6145] [client 127.0.0.1:60488] PHP Fatal error:  Interfaces may not include member variables in /var/www/sites/codegorilla/avoid/testcase/index.php on line 6
+[Wed Jun 05 11:26:52.076245 2019] [php7:error] [pid 6146] [client 127.0.0.1:60492] PHP Fatal error:  Interface function basemodel::test() cannot contain body in /var/www/sites/codegorilla/avoid/testcase/index.php on line 6
+	[Wed Jun 05 11:27:13.675991 2019] [php7:emerg] [pid 6147] [client 127.0.0.1:60496] PHP Parse error:  syntax error, unexpected '}', expecting ';' or '{' in /var/www/sites/codegorilla/avoid/testcase/index.php on line 7
+[Wed Jun 05 11:27:30.547180 2019] [php7:error] [pid 6148] [client 127.0.0.1:60500] PHP Fatal error:  Class childmodel contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (basemodel::test) in /var/www/sites/codegorilla/avoid/testcase/index.php on line 10
+[Wed Jun 05 11:28:52.380530 2019] [php7:error] [pid 6183] [client 127.0.0.1:60516] PHP Fatal error:  Access type for interface method basemodel::anothertest() must be omitted in /var/www/sites/codegorilla/avoid/testcase/index.php on line 8
+

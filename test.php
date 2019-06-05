@@ -2,13 +2,15 @@
 
 class originalClass{
 
-	private function __construct(){
+	// PHP Fatal error:  Access level to extendedClass::__construct() must be protected (as in class originalClass)
+	protected function __construct(){
+	//private function __construct(){
 		echo "parent construct";
 	}
 
 	public static function init(){
 		echo "parent init";
-		self::__construct();
+		self::__construct(); // <- will fail
 	 }
 }
 
@@ -16,7 +18,8 @@ class originalClass{
 class extendedClass extends originalClass{
 	private $instance;
 
-	private function __construct(){
+	protected function __construct(){
+//	private function __construct(){
 		parent::init();
 	}
 
